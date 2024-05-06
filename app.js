@@ -11,7 +11,7 @@ const projectRoutes = require("./routes/project-routes");
 const taskRoutes = require("./routes/task-routes");
 
 // getting the port from the environment variables
-const PORT = process.env.PORT ||8000;
+const PORT = process.env.PORT ||3003;
 
 const app = express();
 app.use(cors({
