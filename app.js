@@ -14,7 +14,9 @@ const taskRoutes = require("./routes/task-routes");
 const PORT = process.env.PORT ||8000;
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin:"*"
+}));
 
 // set the limit of the request body size
 app.use(express.json({ limit: "50mb" }));
